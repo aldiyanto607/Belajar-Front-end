@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="id">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>04-Latihan Review Form</title>
+    </head>
+
+    <body>
+        <h1>Formulir Pendaftaran Mahasiswa </h1>
+        <form action="proses.php" method="post">
+            <label for="nama">Nama Lengkap:</label>
+            <input type="text" name="nama" id="nama" placeholder="Masukkan nama lengkap" required>
+
+            <br><br>
+            <label for="nim">NIM:</label>
+            <input type="text" name="nim" id="nim" placeholder="Masukkan NIM" required>
+
+            <br><br>
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" placeholder="Masukkan email" required>
+
+            <br><br>
+            <label for="password">Password:</label>
+            <input type="password" name="password" id="password" placeholder="Masukkan password" required>
+
+            <br><br>
+            <fieldset>
+                <legend>Status Mahasiswa Aktif</legend>
+                <input type="radio" name="status" id="aktif" value="aktif" required>
+                <label for="aktif">Aktif</label>
+                <input type="radio" name="status" id="cuti" value="cuti">
+                <label for="cuti">Cuti</label>
+                <input type="radio" name="status" id="lulus" value="lulus">
+                <label for="lulus">Lulus</label>
+            </fieldset>
+    
+            <br><br>
+            <fieldset>
+                <legend>Hobi</legend>
+                <input type="checkbox" name="membaca" id="membaca" value="membaca">
+                <label for="membaca">Membaca</label>
+                <input type="checkbox" name="menulis" id="menulis" value="menulis">
+                <label for="menulis">Menulis</label>
+                <input type="checkbox" name="gaming" id="gaming" value="gaming">
+                <label for="gaming">Gaming</label>
+                <input type="checkbox" name="olahraga" id="olahraga" value="olahraga">
+                <label for="olahraga">Olahraga</label>
+            </fieldset>
+            
+            <br><br>
+            <label for="fakultas">Fakultas:</label>
+            <select name="fakultas" id="fakultas" required>
+                <option value="" disabled selected>Pilih Fakultas</option>
+                <option value="febi">Fakultas Ekonomi dan Bisnis Islam</option>
+                <option value="fdik">Fakultas Dakwah dan Ilmu Komunikasi</option>
+                <option value="saintek">Fakultas Sains dan Teknologi</option>
+                <option value="fah">Fakultas Adab dan Humaniora</option>
+            </select>
+
+            <br><br>
+            <label for="umur">Umur:</label>
+            <input type="number" name="umur" id="umur" placeholder="masukan umur" min="17" max="60" required>
+
+            <br><br>
+            <label for="tanggal-lahir">Tanggal Lahir:</label>
+            <input type="date" name="tanggal-lahir" id="tanggal-lahir" required>
+
+            <br><br>
+            <label for="nomor-telepon">Nomor Telepon:</label>
+            <input type="tel" name="nomor-telepon" id="nomor-telepon" placeholder="Masukkan nomor telepon" required>
+
+            <br><br>
+            <label for="alamat">Alamat:</label>
+            <textarea name="alamat" id="alamat" rows="6" cols="40" placeholder="Masukkan alamat lengkap" required></textarea>
+
+            <br><br>
+            <label for="deskripsi">Deskripsi Diri:</label>
+            <textarea name="deskripsi" id="deskripsi" rows="6" cols="40" placeholder="Tulis deskripsi diri Anda di sini..." required></textarea>
+
+            <br><br>
+            <label for="file-cv">Unggah CV:</label>
+            <input type="file" name="file-cv" id="file-cv" accept=".pdf,.docx,.doc" required>
+
+            <br><br>
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+        </form>
+    </body>
+</html>

@@ -11,22 +11,33 @@
         <h1>Formulir Pendaftaran</h1>
         <form action="pendaftaran.php" method="post">
             <label for="Nama">Nama lengkap:</label>
-            <input type="text" id="Nama" name="Nama" required>
+            <input type="text" id="Nama" name="Nama" minlength="3" maxlength="50" required>
             
+            <br><br>
+
+            <label for="umur">Umur:</label>
+            <input type="number" id="umur" name="umur" min="17" max="60" required>
+
+            <br><br>
+
+            <label for="tanggal-lahir">Tanggal Lahir:</label>
+            <input type="date" id="tanggal-lahir" name="tanggal-lahir" required>
+
             <br><br>
 
             <label for="NIM">NIM:</label>
             <input type="text" id="NIM" name="NIM" required>
 
             <br><br>
-
-            <label>Status Mahasiswa:</label>
-            <input type="radio" id="Aktif" name="Status Mahasiswa" value="Aktif" required>
-            <label for="Aktif">Aktif</label>
-            <input type="radio" id="Cuti" name="Status Mahasiswa" value="Cuti">
-            <label for="Cuti">Cuti</label>
-            <input type="radio" id="Lulus" name="Status Mahasiswa" value="Lulus">
-            <label for="Lulus">Lulus</label>
+            <fieldset>
+                <legend>Status Mahasiswa</legend>
+                <input type="radio" id="Aktif" name="Status Mahasiswa" value="Aktif" required>
+                <label for="Aktif">Aktif</label>
+                <input type="radio" id="Cuti" name="Status Mahasiswa" value="Cuti">
+                <label for="Cuti">Cuti</label>
+                <input type="radio" id="Lulus" name="Status Mahasiswa" value="Lulus">
+                <label for="Lulus">Lulus</label>
+            </fieldset>
 
             <br><br>
 
@@ -66,10 +77,20 @@
             <label for="alamat">Alamat:</label>
             <textarea id="alamat" name="alamat" rows="4" cols="40" required placeholder="Tulis alamat Anda di sini..."></textarea>
 
+
+            <br><br>
+
+            <label for="nomor-telepon">Nomor Telepon:</label>
+            <input type="tel" id="nomor-telepon" name="nomor-telepon" required>
+
             <br><br>
             <label for="deskripsi">Deskripsi Diri:</label>
             <textarea id="deskripsi" name="deskripsi" rows="5" cols="50" required placeholder="Tulis deskripsi diri Anda di sini..."></textarea>
-       
+            
+            <br><br>
+
+            <label for="file-cv">Unggah CV:</label>
+            <input type="file" id="file-cv" name="file-cv" accept=".pdf,.doc,.docx" required>
 
             <br><br>
 
