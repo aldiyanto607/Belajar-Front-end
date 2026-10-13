@@ -1,0 +1,8 @@
+body {background-color: rgb(0, 118, 118);}
+
+.kotak {background-color: lightblue; padding: 30px; margin: 10px; 
+    border: solid 3px purple; width: 300px; height: 110px; box-sizing: content-box;}
+.kotak-kedua {background-color: lightgreen; margin: 30px; padding: 10px; 
+    border: dashed 3px white; width: 100px; height: 300px; box-sizing: content-box;}
+.kotak-ketiga {background-color: black; color: white;
+    margin: 30px; padding: 10px; border: dotted 3px white; width: 300px; height: 100px;}
