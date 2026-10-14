@@ -1,0 +1,9 @@
+.blok1 {display: block; background-color: lightblue; margin: 5px; padding: 10px}
+.blok2 {display: block; background-color: lightblue; margin: 5px; padding: 10px}
+.teks1 {display: inline; background-color: lightgreen; margin: 5px; padding: 10px;}
+.teks2 {display: inline; background-color: lightgreen; margin: 5px; padding: 10px;}
+.kotak1 {display: inline-block; width: 200px; height: 100px; background-color: lightblue; 
+        margin: 5px; padding: 10px;}
+.kotak2 {display: inline-block; width: 100px; height: 150px; background-color: lightgreen; 
+    margin: 5px; padding: 10px;}
+.sembunyi {display: none;}
