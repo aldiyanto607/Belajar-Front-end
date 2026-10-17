@@ -2,8 +2,57 @@
 .blok2 {display: block; background-color: lightblue; margin: 5px; padding: 10px}
 .teks1 {display: inline; background-color: lightgreen; margin: 5px; padding: 10px;}
 .teks2 {display: inline; background-color: lightgreen; margin: 5px; padding: 10px;}
-.kotak1 {display: inline-block; width: 200px; height: 100px; background-color: lightblue; 
-        margin: 5px; padding: 10px;}
-.kotak2 {display: inline-block; width: 100px; height: 150px; background-color: lightgreen; 
-    margin: 5px; padding: 10px;}
+
+.wadah{
+    position: relative; 
+    width: 300px; 
+    height: 200px;
+    background-color: lightgray;
+}
+.kotak1 {
+    position: absolute;
+    top: 20px;
+    left: 30px;
+    display: inline-block; 
+    width: 200px; 
+    height: 100px; 
+    background-color: lightblue;
+    margin: 5px; 
+    padding: 10px;
+}
+
+
+.kotak2 {
+    display: inline-block;
+    width: 100px; 
+    height: 150px; 
+    background-color: lightgreen; 
+    margin: 5px; 
+    padding: 10px; 
+    position: relative; 
+    top: 20px; 
+    left: 30px;
+}
+
+.tombol-chat {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    background-color: green;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+}
+
+.menu {
+    position:sticky;
+    top: 0;
+    background-color: darkblue;
+    color: white;
+    padding: 15px;
+    width: 100px;
+    height: 30px;
+
+}
+
 .sembunyi {display: none;}
