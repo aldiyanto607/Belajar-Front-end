@@ -1,5 +1,11 @@
-nav {background-color: aliceblue;
-    display: block;
+nav ul {background-color: aliceblue;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 15px;
+    margin-bottom: 20px;
+    list-style: none;
+    gap: 20px;
+    justify-content: center;
 }
 body {
     background-color: lightblue;
@@ -11,4 +17,18 @@ body {
 .perjalanan {
     background-color: antiquewhite;
     text-align: center; 
+    width: 100%;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 2px solid darkblue;
+    box-sizing: border-box;
+}
+
+.profil {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: center;
+
 }
